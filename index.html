@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Un héritage pour un cœur pur</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1 data-i18n="title">Un héritage pour un cœur pur</h1>
+        <nav>
+            <select id="language-selector">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="pl">Polski</option>
+            </select>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="symbol.jpg" alt="Image symbolique" class="symbolic-img" />
+            <p data-i18n="intro">
+                Lena Andersen, une femme âgée vivant à Toulouse, sans héritier, souhaite faire don de ses biens à une personne honnête et craignant Dieu.
+            </p>
+        </section>
+        <section>
+            <h2 data-i18n="conditions-title">Conditions</h2>
+            <p data-i18n="conditions">
+                L'héritier devra être une personne de bonne foi, respectueuse, et capable de prendre soin des biens après le départ de cette femme.
+            </p>
+        </section>
+        <section>
+            <h2 data-i18n="contact-title">Contact</h2>
+            <p data-i18n="email-info">Vous pouvez écrire directement à Lena Andersen à l'adresse suivante : <a href="mailto:lenaandersen421@gmail.com">lenaandersen421@gmail.com</a></p>
+            <form onsubmit="return validateForm();">
+                <input type="text" name="honeypot" id="honeypot" style="display:none" />
+                <input type="text" placeholder="Nom" required />
+                <input type="email" placeholder="Email" required />
+                <textarea placeholder="Pourquoi vous ?" required></textarea>
+                <button type="submit" data-i18n="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Un héritage pour un cœur pur</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
